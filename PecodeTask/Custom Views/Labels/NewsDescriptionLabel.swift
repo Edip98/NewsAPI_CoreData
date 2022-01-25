@@ -27,8 +27,6 @@ class NewsDescriptionLabel: UILabel {
     
     private func configure() {
         textColor = .label
-        backgroundColor = .systemBackground
         translatesAutoresizingMaskIntoConstraints = false
     }
-
 }

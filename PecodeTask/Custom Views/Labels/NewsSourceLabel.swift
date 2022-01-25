@@ -28,7 +28,6 @@ class NewsSourceLabel: UILabel {
     
     private func configure() {
         textColor = .systemGray
-        backgroundColor = .systemBackground
         translatesAutoresizingMaskIntoConstraints = false
     }
 }

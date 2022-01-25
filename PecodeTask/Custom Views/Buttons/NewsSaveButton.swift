@@ -25,7 +25,6 @@ class NewsSaveButton: UIButton {
         imageView?.tintColor = .black
         contentVerticalAlignment = .fill
         contentHorizontalAlignment = .fill
-         tag = 0
         translatesAutoresizingMaskIntoConstraints = false
     }
 }

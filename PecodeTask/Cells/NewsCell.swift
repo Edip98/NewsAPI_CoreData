@@ -34,6 +34,10 @@ class NewsCell: UITableViewCell {
     private func configure() {
         contentView.addSubviews(newsAuthorLabel, newsTitleLabel, newsDescriptionLabel, newsImageView, newsSaveButton, newsSourceLabel)
         
+        let backgroundView = UIView()
+        backgroundView.backgroundColor = .systemBackground
+        selectedBackgroundView = backgroundView
+        
         newsSaveButton.addTarget(self, action: #selector(newsSaveButtonPressed), for: .touchUpInside)
         let padding: CGFloat = 5
         
@@ -105,6 +109,7 @@ class NewsCell: UITableViewCell {
             print("Saving Error: \(error)")
         }
     }
+    
     
     func set(with viewModel: NewsCellModel) {
         newsSourceLabel.text = viewModel.source

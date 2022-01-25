@@ -28,7 +28,7 @@ class NewsTitleLabel: UILabel {
     
     
     private func configure() {
-        backgroundColor = .systemBackground
+        textColor = .label
         translatesAutoresizingMaskIntoConstraints = false
     }
 }
